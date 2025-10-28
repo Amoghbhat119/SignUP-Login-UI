@@ -22,6 +22,8 @@ export default function LoginPage() {
       alert("Invalid credentials.");
     }
   }
+  
+  //Main Login Page UI code starts here
 
   return (
     <div className="min-h-screen grid place-items-center bg-[#f3f4f6] p-4">
@@ -73,8 +75,7 @@ export default function LoginPage() {
 
             <button
               type="submit"
-              className="w-full h-11 rounded-lg text-white font-medium shadow
-              bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+              className="w-full h-11 rounded-lg text-white font-medium shadow bg-gradient-to-r from-indigo-500 to-purple-500 hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-indigo-300"
             >
               Login
             </button>

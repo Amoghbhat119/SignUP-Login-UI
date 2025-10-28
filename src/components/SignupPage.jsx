@@ -1,6 +1,9 @@
 import { useState } from "react";
 import soccerImg from "../assets/soccer.jpg";
+import facebookImg from "../assets/Facebook.png";
+import twitterImg from "../assets/Twitter.png";
 
+//Function for SignUp Page 
 export default function SignupPage() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,7 +30,7 @@ export default function SignupPage() {
 
     alert(`Signup successful!\nWelcome, ${fullName}`);
   }
-
+// 2 loyout Signup Page UI code starts here
   return (
     <div className="min-h-screen grid place-items-center bg-[#f3f4f6] p-4">
       <div className="w-full max-w-5xl bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,.08)] border border-gray-200 overflow-hidden">
@@ -91,9 +94,13 @@ export default function SignupPage() {
               <div className="text-center text-sm text-gray-500">Signup with</div>
 
               <div className="flex items-center justify-center gap-4">
-                <button type="button" className="h-10 w-10 rounded-full bg-blue-600 text-white hover:opacity-90">f</button>
-                <button type="button" className="h-10 w-10 rounded-full bg-sky-500 text-white hover:opacity-90">t</button>
-              </div>
+              <button type="button" className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center hover:opacity-90" title="Facebook"  >
+              <img src={facebookImg} alt="facebook" className="h-5 w-5" />
+              </button>
+              <button type="button" className="h-10 w-10 rounded-full bg-sky-500 flex items-center justify-center hover:opacity-90" title="Twitter" >
+              <img src={twitterImg} alt="twitter" className="h-5 w-5" />
+              </button>
+            </div>
             </form>
           </div>
 
