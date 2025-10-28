@@ -22,7 +22,7 @@ export default function LoginPage() {
       alert("Invalid credentials.");
     }
   }
-  
+
   //Main Login Page UI code starts here
 
   return (
@@ -81,9 +81,9 @@ export default function LoginPage() {
             </button>
 
             <p className="text-center text-sm text-gray-600">
-              Don’t have an account?{" "}
-              <a href="/signup" className="text-indigo-600 hover:underline">
-                Sign up
+              Don’t have an account? 
+              <a href="/signup" className="text-indigo-600 hover:underline pl-1">
+                 Sign up
               </a>
             </p>
           </form>
